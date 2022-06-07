@@ -1,2 +1,7 @@
 # Nonparametric-regression-classification-functional-categorical
-Code according to the paper "Nonparametric regression and classification with functional, categorical, and mixed covariates"
+Code according to the paper "Nonparametric regression and classification with functional, categorical, and mixed covariates" by Leonie Selk and Jan Gertheiss.
+
+Abstract of the paper:
+We consider nonparametric prediction with multiple covariates, in particular categorical or functional predictors, or a mixture of both. The method proposed bases on an extension of the Nadaraya-Watson estimator where a kernel function is applied on a linear combination of distance measures each calculated on single covariates, with weights being estimated from the training data. The dependent variable can be categorical (binary or multi-class) or continuous, thus we consider both classification and regression problems. The methodology presented is illustrated and evaluated on artificial and real world data. Particularly it is observed that prediction accuracy can be increased, and irrelevant, noise variables can be identified/removed by `downgrading' the corresponding distance measures in a completely data-driven way.  
+
+This respository contains the according R code. The file Functions.R contains the functions to determine the optimal weights and estimate the posterior probality (classification case) or regression function (regression case). The file SimulationExample.R gives examples for simulated data (training data and new data to evaluate the estimator) that correspond to a classification and a regression scenario with mixed covariates, called MixC and MixR in the corresponding paper.
